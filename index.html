@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            list-style-type: none;
+        }
+        .nav-cont{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: rgb(233, 241, 241);
+            font-size: 20px;
+            position: sticky;
+            top: 1px;
+            width:99vw;
+        }
+        .img-section{
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            margin: 20px 60px;
+        }
+        .img img{
+            width: 100%;
+            height: 400px;
+            border-radius: 10px 10px 0px 0px;
+            
+        }
+        .div-border{
+            height: 530px;
+            border-radius: 10px;
+            margin: 10px;
+            width:90%;
+            box-shadow: 1px 1px 5px 2px gray;
+        }
+        .title{
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 10px;
+            text-align: center;
+        }
+        .description{
+            font-size: 1em;
+            padding: 5px;
+            color: rgb(88, 90, 91);
+            text-align-last: center;
+        }
+        .numbers{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        .num{
+            width: 2%;
+            height: 25px;
+            text-align: center;
+            align-content: center;
+            margin: 30px 0px;
+        }
+        .num:hover{
+            background-color: black;
+            color: white;
+        }
+        .hrtag{
+            color: aqua;
+            width: 80%;
+            margin: 30px auto;
+            text-align: center;
+        }
+        .aboutman{
+            text-align: center;
+            margin: 50px 80px;
+            padding: 5px;
+        }
+        .mainfoot{
+            margin: 80px;
+        }
+        .foot{
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .foot-head{
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        .foot-descri{
+            color: rgb(0, 0, 0);
+            /* font-size: 0.9em; */
+            padding: 15px 0px;
+        }
+        .foot-img{
+            width: 25%;
+            height: 50px;
+            margin: 10px;
+        }
+        .foot-sub{
+            display: flex;
+        }
+        .up{
+            /* font-size: -1em; */
+            line-height: .01em;
+        }
+        .grid-mainfoot{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            gap: 10px;
+            /* align-items: center; */
+            margin: 10px;
+            text-align: center;
+        }
+        .grid-foot{
+            background-color: rgb(148, 142, 142);
+            color: white;
+            padding: 4px;
+        }
+        /* .man{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 100%;
+            justify-content: space-around;
+            margin:0px 120px;
+            text-align: justify;
+        } */
+        .man {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .man img{
+            width: 100%;
+        }
+
+
+
+        @media screen and (width>768px) and (width<992px) {
+            .img-section{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin: 20px 60px;
+        }
+        .foot{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        
+        .man img{
+            width: 100%;
+        }
+        .grid-mainfoot{
+            display: grid;
+            grid-template-columns: auto auto auto ;
+        }
+
+    }
+
+    @media screen and (width>0px) and (width<768px){
+            .img-section{
+            display: grid;
+            grid-template-columns: 100% ;
+            margin: 20px 60px;
+        }
+        .foot{
+            display: grid;
+            grid-template-columns: 100%;
+            justify-content: space-between;
+            gap: 20px;
+        }
+       
+        .man img{
+            width: 100%;
+        }
+        .grid-mainfoot{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        
+    }
+    </style>
+</head>
+<body>
+    
+    <nav class="nav-cont">
+        <i class="fa fa-navicon" style="font-size:24px"></i>
+        <li>MY FOOD</li>
+        <li>MAIL</li>
+    </nav>
+    <section class="img-section">
+        <div class="div-border">
+            <div class="img">
+                <img src="assests2/img1.jpg" alt="">
+            </div>
+            <div class="title">The Perfect Sandwich, A Real NYC Classic</div>
+            <div class="description">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+        </div>
+        <div class="div-border">
+            <div class="img">
+                <img src="assests2/img2.jpg" alt="">
+            </div>
+            <div class="title">Let Me Tell You About This Steak</div>
+            <div class="description">some random text to lorem lorem lorem lorem ipsum text praesent tincidunt .</div>
+        </div>
+        <div class="div-border">
+            <div class="img">
+                <img src="assests2/img3.jpg" alt="">
+            </div>
+            <div class="title">Cherries, interrupted</div>
+            <div class="description">Lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+            <div class="description">What else?</div>
+        </div>
+        <div class="div-border">
+            <div class="img">
+                <img src="assests2/img4.jpg" alt="">
+            </div>            
+            <div class="title">Once Again, Robust Wine and Vegetable Pasta</div>
+            <div class="description">Lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+        </div>
+    </section>
+
+    <section class="img-section">
+        <div class="div-border">
+            <div class="img">
+                <img src="assests2/img5.jpg" alt="">
+            </div>
+            <div class="title">All I Need Is a Popsicle</div>
+            <div class="description">Lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+        </div>
+        <div class="div-border">
+            <div class="img">
+                <img src="assests2/img6.jpg" alt="">
+            </div>
+            <div class="title">Salmon For Your Skin</div>
+            <div class="description">Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+        </div>
+        <div class="div-border">
+            <div class="img">
+                <img src="assests2/img7.jpg" alt="">
+            </div>
+            <div class="title">Cherries, interrupted</div>
+            <div class="description">Lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+            
+        </div>
+        <div class="div-border">
+            <div class="img">
+                <img src="assests2/img8.jpg" alt="">
+            </div>            
+            <div class="title">Once Again, Robust Wine and Vegetable Pasta</div>
+            <div class="description">Lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+        </div>
+    </section>
+
+   <div class="numbers">
+    <div class="num">>></div>
+    <div class="num">1</div>
+    <div class="num">2</div>
+    <div class="num">3</div>
+    <div class="num">4</div>
+    <div class="num">5</div>
+    <div class="num">&lt;&lt;</div>
+   </div>
+
+   <hr class="hrtag">
+
+   <section class="aboutman">
+    <h1 >About Me, The Food Man</h1>
+    <div class="img-man">
+        <p class="man"><img src="assests2/man.jpg" alt=""></p>
+    </div>
+    <h2>I am Who I Am!</h2>
+    <p style="font-style: italic;">With Passion For Real, Good Food</p>
+    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+   </section>
+
+   <hr class="hrtag">
+
+   <div class="mainfoot">
+   <footer class="foot">
+    <div>
+        <div class="foot-head">FOOTER</div>
+        <div class="foot-descri">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</div>
+        <div class="foot-descri">Powered by w3.css</div>
+    </div>
+    <div>
+        <div class="foot-head">BLOG POSTS</div>
+        <div class="foot-sub">
+            <img class="foot-img" src="assests2/foot1.jpg" alt="">
+            <div>
+            <p>Lorem</p>
+            <p class="up">Sed mattis nunc</p>
+            </div>
+        </div>
+
+        <hr style="width: 80%; color: gainsboro; margin: 2px auto;">
+
+        <div class="foot-sub">
+            <img class="foot-img" src="assests2/foot2.jpg" alt="">
+            <div>
+            <p>Ipsum</p>
+            <p class="up">Praes tinci sed</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <span class="foot-head">POPULAR TAGS</span>
+        <div class="grid-mainfoot">
+        <div class="grid-foot">Travel</div>
+        <div class="grid-foot">New York</div>
+        <div class="grid-foot">dinner</div>
+        <div class="grid-foot">salon</div>
+        <div class="grid-foot">paris</div>
+        <div class="grid-foot">USA</div>
+        </div>
+        <div class="grid-mainfoot">
+        <div class="grid-foot">Hyderabad</div>
+        <div class="grid-foot">Fried rice</div>
+        <div class="grid-foot">Fish</div>
+        <div class="grid-foot">Chiken</div>
+        </div>
+        </div>
+    </div>
+
+   </footer>
+   </div>
+</body>
+</html>

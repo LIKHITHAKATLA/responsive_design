@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:auto auto;
+            gap: 20px;
+            /* align-content: center; */
+        }
+        .stylecolor{
+            color: darkgray;
+        }
+        .border-class{
+            /* border: 1px solid black; */
+            padding: 30px;
+            height: 600px;
+        }
+        img{
+            width: 90%;
+        }
+        .anchor{
+            display: block;
+            border: 1px solid rgb(196, 205, 205);
+            background-color: rgb(196, 205, 205);
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .anchor:visited,.anchor:hover,.anchor:active,.anchor:link{
+            text-decoration: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="border-class">
+        <img src="assets/jhon.jpg" alt="">
+        <h2>John Doe</h2>
+        <p class="stylecolor">CEO & Founder</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <a class="anchor" href="#">contact</a>    
+    </div>
+
+        <div class="border-class">
+        <img src="assets/img2.jpg" alt="">
+        <h2>John Doe</h2>
+        <p class="stylecolor">Architect</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <a class="anchor" href="#">contact</a>    
+    </div>
+    
+        <div class="border-class">
+        <img src="assets/img3.jpg" alt="">
+        <h2>Mike Ross</h2>
+        <p class="stylecolor">Architect</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <a class="anchor" href="#">contact</a>    
+    </div>
+
+        <div class="border-class">
+            <img src="assets/img4.jpg" alt="">
+            <h2>Dan Star</h2>
+            <p class="stylecolor">Architect</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <a class="anchor" href="#">contact</a>
+        </div>
+
+    </div>
+    
+</body>
+</html>
